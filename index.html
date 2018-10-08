@@ -1,0 +1,150 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tyler Nicol</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav navigation">
+        <div class="nav-left">
+            <a class="nav-item nav-logo">
+                <img src="images/signature.png" alt="Tyler Mannion-Nicol">
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <a class="nav-item" href="https://www.instagram.com/tyler.mannion.nicol/" target="_blank">
+                <span class="icon">
+                <i class="fa fa-instagram"></i>
+            </span>
+            </a>
+            <a class="nav-item" href="https://twitter.com/tylermannion" target="_blank">
+                <span class="icon">
+                <i class="fa fa-twitter"></i>
+            </span>
+            </a>
+            <a class="nav-item" href="https://www.linkedin.com/in/tyler-mannion-nicol-56b061138/" target="_blank">
+                <span class="icon">
+                <i class="fa fa-linkedin"></i>
+            </span>
+            </a>
+        </div>
+
+        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+        <span id="nav-toggle" class="nav-toggle">
+        <i class="fa fa-caret-square-o-down menu-rotate" aria-hidden="true"></i>
+        </span>
+
+        <!-- This "nav-menu" is hidden on mobile -->
+        <!-- Add the modifier "is-active" to display it on mobile -->
+        <div id="nav-menu" class="nav-right nav-menu">
+            <a href="#projects" class="nav-item nav-link">Projects</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+    </nav>
+    <section class="section" id="hero" data-midnight="blue">
+        <div id="header-skew"></div>
+        <div class="header-content">
+            <h1>Hi!</h1>
+            <h3>Let's make some cool stuff!</h3>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#374355" points="0,100 100,0 100,100"/>
+        </svg>
+    </section>
+
+    <section class="section" id="projects" data-midnight="default">
+        <div class="section-header">
+            <h1>Projects</h1>
+        </div>
+        <div v-for="(project, index) in items">
+            <div v-if="index % 2 === 0" class="project-container odd">
+                <div :style="{ 'background-image': 'url(' + project.img + ')' }" class="project-image"></div>
+                <a v-bind:href="project.url" class="project-info info-left">
+                    <div class="project-text">
+                        <h1>{{ project.name }}</h1>
+                        <h3>{{ project.type }}</h3>
+                        <p>{{ project.info }}</p>
+                    </div>
+                </a>
+            </div>
+            <div v-else-if="index % 2 !== 0" class="project-container">
+                <div :style="{ 'background-image': 'url(' + project.img + ')' }" class="project-image"></div>
+                <a v-bind:href="project.url" class="project-info info-right">
+                    <div class="project-text">
+                        <h1>{{ project.name }}</h1>
+                        <h3>{{ project.type }}</h3>
+                        <p>{{ project.info }}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#EBEFF3" points="0,100 100,0 100,100"/>
+        </svg>
+    </section>
+    <section class="section" id="about" data-midnight="default">
+        <div class="section-header">
+            <h1>About</h1>
+        </div>
+        <div class="columns is-marginless">
+            <div class="column is-10 is-offset-1">
+                <div class="columns">
+                    <div class="column padding" style="display: flex">
+                        <p style="align-self: center; font-size: 1.6rem; line-height: 2">Tyler is a talented designer who prides himself on his ability to anticipate what a user will best respond to on a website or app. This aptitude, coupled with his knowledge of modern front end languages such as HTML5, CSS3, JavaScript and JS frameworks, enables Tyler to bring these ideas to life.</p>
+                    </div>
+                    <div class="column has-text-centered is-paddingless">
+                        <img src="images/me.png" alt="" style="width: 50%;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#374355" points="0,100 100,0 100,100"/>
+        </svg>
+    </section>
+    <section class="section" id="contact">
+        <div class="section-header">
+            <h1>Contact</h1>
+        </div>
+        <div class="columns is-mobile">
+            <div class="column is-4 contact-button has-text-centered">
+                <a href="https://www.instagram.com/tyler.mannion.nicol/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            <div class="column is-4 contact-button has-text-centered">
+                <a href="https://twitter.com/tylermannion" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+            <div class="column is-4 contact-button has-text-centered">
+                <a href="https://www.linkedin.com/in/tyler-mannion-nicol-56b061138/" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="columns is-desktop">
+            <div class="column has-text-centered">
+                <a href="mailto:tylernicol556@gmail.com">
+                    <h3 class="email-address">Email Me</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="js/vue.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
