@@ -1,150 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Cache-control" content="no-cache">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tyler Nicol</title>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bulma.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Tyler Nicol</title>
 </head>
 
 <body>
-    <nav class="nav navigation">
-        <div class="nav-left">
-            <a class="nav-item nav-logo">
-                <img src="images/signature.png" alt="Tyler Mannion-Nicol">
-            </a>
-        </div>
+  <nav class="navbar is-spaced is-transparent is-fixed-top" style="background: transparent;">
 
-        <div class="nav-center">
-            <a class="nav-item" href="https://www.instagram.com/tyler.mannion.nicol/" target="_blank">
-                <span class="icon">
-                <i class="fa fa-instagram"></i>
-            </span>
-            </a>
-            <a class="nav-item" href="https://twitter.com/tylermannion" target="_blank">
-                <span class="icon">
-                <i class="fa fa-twitter"></i>
-            </span>
-            </a>
-            <a class="nav-item" href="https://www.linkedin.com/in/tyler-mannion-nicol-56b061138/" target="_blank">
-                <span class="icon">
-                <i class="fa fa-linkedin"></i>
-            </span>
-            </a>
-        </div>
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="images/logo_white.svg" alt="Logo" width="60">
+      </a>
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-        <span id="nav-toggle" class="nav-toggle">
-        <i class="fa fa-caret-square-o-down menu-rotate" aria-hidden="true"></i>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+        <a class="navbar-item is-hidden-touch" href="https://www.instagram.com/tyler.mannion.nicol/" target="_blank">
+          <span class="icon" style="color: #CD486B;">
+            <i class="fa fa-lg fa-instagram"></i>
+          </span>
+        </a>
+        <a class="navbar-item is-hidden-touch" href="https://twitter.com/tylermannion" target="_blank">
+          <span class="icon" style="color: #1da1f2;">
+            <i class="fa fa-lg fa-twitter"></i>
+          </span>
+        </a>
+        <a class="navbar-item is-hidden-touch" href="linkedin.com/in/tyler-mannion-nicol-56b061138/" target="_blank">
+          <span class="icon" style="color: #0077B5;">
+            <i class="fa fa-lg fa-linkedin"></i>
+          </span>
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+          <a class="navbar-link">Work</a>
+          <div class="navbar-dropdown is-boxed is-right">
+            <a href="/vertex" class="navbar-item">Vertex</a>
+            <a href="#" class="navbar-item">Saulter Street</a>
+            <a href="#" class="navbar-item">CUT</a>
+            <hr class="navbar-divider">
+            <a href="#" class="navbar-item">See all projects</a>
+          </div>
+        </div>
+        <a href="#" class="navbar-item is-hidden-desktop">Work</a>
+        <a href="#" class="navbar-item">About</a>
+        <span class="navbar-item is-hidden-touch">
+          <a href="#" class="button is-primary">Contact</a>
         </span>
+        <a href="" class="navbar-item is-hidden-desktop">Contact</a>
+        <div class="navbar-item is-hidden-desktop">
+          <div class="field is-grouped">
+            <p class="control">
+              <a href="https://www.instagram.com/tyler.mannion.nicol/" class="button insta-button">
+              <span class="icon">
+                <i class="fa fa-lg fa-instagram"></i>
+              </span>
+              <span>Instagram</span>
+            </a>
+            </p>
+            <p class="control is-expanded">
+              <a href="https://twitter.com/tylermannion" class="button twitter-button">
+              <span class="icon">
+                <i class="fa fa-lg fa-twitter"></i>
+              </span>
+              <span>Twitter</span>
+            </a>
+            </p>
+            <p class="control">
+              <a href="linkedin.com/in/tyler-mannion-nicol-56b061138/" class="button linked-button">
+              <span class="icon">
+                <i class="fa fa-lg fa-linkedin"></i>
+              </span>
+              <span>LinkedIn</span>
+            </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </nav>
 
-        <!-- This "nav-menu" is hidden on mobile -->
-        <!-- Add the modifier "is-active" to display it on mobile -->
-        <div id="nav-menu" class="nav-right nav-menu">
-            <a href="#projects" class="nav-item nav-link">Projects</a>
-            <a href="#about" class="nav-item nav-link">About</a>
-            <a href="#contact" class="nav-item nav-link">Contact</a>
+  <section class="hero is-large is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1 class="title is-1 is-spaced is-uppercase">Hi, I'm Tyler</h1>
+            <h2 class="subtitle is-3">UX Designer & Front-end Developer</h2>
+          </div>
+          <div class="column">
+              <svg width="100%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><clipPath id="_clip1"><path d="M196.164,172.872c69.468,-69.468 182.267,-69.468 251.735,0c69.468,69.468 69.468,182.266 0,251.734c-69.468,69.469 -182.267,69.469 -251.735,0c-69.468,-69.468 -69.468,-182.266 0,-251.734Z"/></clipPath><g clip-path="url(#_clip1)"><use xlink:href="#_Image2" x="144.089" y="161.792" width="314.944px" height="314.944px" transform="matrix(0.999823,0,0,0.999823,0,0)"/></g><clipPath id="_clip3"><path d="M304.836,327.128c-69.468,69.468 -182.267,69.468 -251.735,0c-69.468,-69.468 -69.468,-182.266 0,-251.734c69.468,-69.469 182.267,-69.469 251.735,0c69.468,69.468 69.468,182.266 0,251.734Z"/></clipPath><g clip-path="url(#_clip3)"><use xlink:href="#_Image4" x="42" y="23.297" width="314.944px" height="314.944px" transform="matrix(0.999823,0,0,0.999823,1.13687e-13,0)"/></g></svg>
+          </div>
         </div>
-    </nav>
-    <section class="section" id="hero" data-midnight="blue">
-        <div id="header-skew"></div>
-        <div class="header-content">
-            <h1>Hi!</h1>
-            <h3>Let's make some cool stuff!</h3>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon fill="#374355" points="0,100 100,0 100,100"/>
-        </svg>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="section" id="projects" data-midnight="default">
-        <div class="section-header">
-            <h1>Projects</h1>
+  <div class="hero is-medium vertex list">
+    <h1 class="name" style="display: none">Vertex</h1>
+    <div class="hero-body">
+      <div class="container content is-medium">
+        <div class="columns">
+          <div class="column is-6">
+            <img src="images/vertexLogo.png" alt="Vertex Logo" width="40%" class="logo-image">
+            <p>Vertex is a home media player built for simplicity without subtracting from the beautiful user interface. It minimizes the complications that come with proprietary software like iTunes and allows users to drag and drop movies in a manner comparable
+              to a flash drive.
+            </p>
+            <a href="/vertex" class="button is-medium is-black is-inverted is-outlined has-text-weight-bold">VIEW</a>
+          </div>
         </div>
-        <div v-for="(project, index) in items">
-            <div v-if="index % 2 === 0" class="project-container odd">
-                <div :style="{ 'background-image': 'url(' + project.img + ')' }" class="project-image"></div>
-                <a v-bind:href="project.url" class="project-info info-left">
-                    <div class="project-text">
-                        <h1>{{ project.name }}</h1>
-                        <h3>{{ project.type }}</h3>
-                        <p>{{ project.info }}</p>
-                    </div>
-                </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero is-medium saulter list">
+    <h1 class="name" style="display: none">Saulter Street Brewery</h1>
+    <div class="hero-body">
+      <div class="container content is-medium">
+        <div class="columns">
+          <div class="column is-6">
+            <img src="images/saulterLogo.png" alt="Vertex Logo" width="20%" class="logo-image">
+            <p>Saulter Street Brewery is one of Toronto's newest craft breweries. The Website has a unique design akin to their unique image. The brewery has already been featured in many publications and has become the official craft beer of Cirque Du Soleil:
+              VOLTA
+            </p>
+            <a href="" class="button is-medium is-black is-inverted is-outlined has-text-weight-bold">VIEW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero is-medium cut list">
+    <h1 class="name" style="display: none">CUT</h1>
+    <div class="hero-body">
+      <div class="container content is-medium">
+        <div class="columns">
+          <div class="column is-6">
+            <img src="images/cutLogo.png" alt="Vertex Logo" width="20%" class="logo-image">
+            <p>The goal behind creating CUT was to re-design a household product and make it 'smart' without using a conventional screen. CUT is a cutting board that tracks the nutritional information of the food you are cooking and records your recipe in
+              a database that is displayed to the user using a projector
+            </p>
+            <a href="" class="button is-medium is-black is-inverted is-outlined has-text-weight-bold">VIEW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section is-medium">
+    <div class="container">
+      <h1 class="title is-1">OTHER WORK</h1>
+      <div class="columns is-variable is-8 is-multiline">
+        <div class="column has-text-justified">
+          <h3 class="title">CAEPLA</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores sapiente unde magnam alias dolorem vero, exercitationem, similique nulla quisquam quaerat libero itaque cupiditate quo voluptates quia consequuntur harum adipisci!</p>
+        </div>
+        <div class="column has-text-justified">
+          <h3 class="title">OPFFA</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores sapiente unde magnam alias dolorem vero, exercitationem, similique nulla quisquam quaerat libero itaque cupiditate quo voluptates quia consequuntur harum adipisci!</p>
+        </div>
+        <div class="column has-text-justified">
+          <h3 class="title">IRIS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores sapiente unde magnam alias dolorem vero, exercitationem, similique nulla quisquam quaerat libero itaque cupiditate quo voluptates quia consequuntur harum adipisci!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6">
+            <h1 class="title is-1 is-spaced is-uppercase">About Me</h1>
+            <div class="content is-medium">
+              <p>Tyler is a talented designer who prides himself on his ability to anticipate what a user will best respond to on a website or app. This aptitude, coupled with his knowledge of modern front end languages such as HTML5, CSS3, JavaScript and JS frameworks, enables Tyler to bring these ideas to life.</p>
             </div>
-            <div v-else-if="index % 2 !== 0" class="project-container">
-                <div :style="{ 'background-image': 'url(' + project.img + ')' }" class="project-image"></div>
-                <a v-bind:href="project.url" class="project-info info-right">
-                    <div class="project-text">
-                        <h1>{{ project.name }}</h1>
-                        <h3>{{ project.type }}</h3>
-                        <p>{{ project.info }}</p>
-                    </div>
-                </a>
-            </div>
+          </div>
+          <div class="column is-4 is-offset-2">
+            <img src="images/me.png" alt="">
+          </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon fill="#EBEFF3" points="0,100 100,0 100,100"/>
-        </svg>
-    </section>
-    <section class="section" id="about" data-midnight="default">
-        <div class="section-header">
-            <h1>About</h1>
-        </div>
-        <div class="columns is-marginless">
-            <div class="column is-10 is-offset-1">
-                <div class="columns">
-                    <div class="column padding" style="display: flex">
-                        <p style="align-self: center; font-size: 1.6rem; line-height: 2">Tyler is a talented designer who prides himself on his ability to anticipate what a user will best respond to on a website or app. This aptitude, coupled with his knowledge of modern front end languages such as HTML5, CSS3, JavaScript and JS frameworks, enables Tyler to bring these ideas to life.</p>
-                    </div>
-                    <div class="column has-text-centered is-paddingless">
-                        <img src="images/me.png" alt="" style="width: 50%;">
-                    </div>
+      </div>
+  </section>
 
-                </div>
-            </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon fill="#374355" points="0,100 100,0 100,100"/>
-        </svg>
-    </section>
-    <section class="section" id="contact">
-        <div class="section-header">
-            <h1>Contact</h1>
-        </div>
-        <div class="columns is-mobile">
-            <div class="column is-4 contact-button has-text-centered">
-                <a href="https://www.instagram.com/tyler.mannion.nicol/" target="_blank">
-                    <i class="fa fa-instagram"></i>
-                </a>
-            </div>
-            <div class="column is-4 contact-button has-text-centered">
-                <a href="https://twitter.com/tylermannion" target="_blank">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </div>
-            <div class="column is-4 contact-button has-text-centered">
-                <a href="https://www.linkedin.com/in/tyler-mannion-nicol-56b061138/" target="_blank">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-        <div class="columns is-desktop">
-            <div class="column has-text-centered">
-                <a href="mailto:tylernicol556@gmail.com">
-                    <h3 class="email-address">Email Me</h3>
-                </a>
-            </div>
-        </div>
-    </section>
-    <script src="js/vue.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
-    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
-    <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="lib/main.js"></script>
 </body>
 
 </html>
